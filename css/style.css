@@ -1,3 +1,12 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    background-color: #7e7e7e;
+}
 /*Add to Cart and Wishlist buttons*/
 .btn {
     padding: 12px 16px;
@@ -186,4 +195,27 @@ input[type=submit]:hover {
 .carousel-inner {
     width: 100%;
     max-height: 900px !important;
+}
+/*AboutUs.html*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+article#main-col {
+    margin-top: 150px;
+    float: left;
+    width: 65%;
+}
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 250px;
 }
