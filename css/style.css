@@ -1,0 +1,189 @@
+/*Add to Cart and Wishlist buttons*/
+.btn {
+    padding: 12px 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: rgb(128, 42, 42);
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.Card-view-p {
+    color: rgb(36, 34, 34);
+    text-align: center;
+}
+
+#checkoutHeader {
+    text-align: center;
+}
+
+#cart-header {
+    text-align: center;
+}
+
+#footer {
+    background: #292b2c;
+}
+
+#newsletterHeader {
+    text-align: center;
+}
+
+
+#couponHeader {
+    text-align: center;
+}
+
+.form-inline {
+    padding-top: 50px;
+}
+
+.input-group {
+    padding-top: 50px;
+}
+
+#subscribe-confirm {
+    text-align: center;
+}
+
+#totalMinDiscount {
+    text-align: center;
+}
+
+/*Deleivery Form*/
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Delivery submit button */
+input[type=submit] {
+    width: 100%;
+    background-color: #292b2c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+    background-color: #2a5970;
+}
+
+.quickAddButtons {
+    width: 100%;
+    background-color: #292b2c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quickAddButtons:hover {
+    background-color: #2a5970;
+}
+
+#redeemCoupon {
+    width: 100%;
+    background-color: #292b2c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#redeemCoupon:hover {
+    background-color: #056415;
+}
+
+.removeAllFromCart {
+    width: 100%;
+    background-color: #292b2c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.removeAllFromCart:hover {
+    background-color: #640505;
+}
+
+#hide-view-button {
+    width: 100%;
+    background-color: #292b2c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#hide-view-button:hover {
+    background-color: #2a5970;
+    ;
+}
+
+.viewProductContainer {
+    text-align: center;
+}
+
+.viewPorductButton {
+    display: inline-block;
+    background-color: #273136;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 900px !important;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--Responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Adventure Bike | Products</title>
+    <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--My custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Font Wesome Link-->
+    <script src="https://kit.fontawesome.com/65b437986d.js" crossorigin="anonymous"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--My custom JavaScript-->
+    <script src="js/cart.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="images/navbarIcon.png" width="30" height="30" class="d-inline-block align-top" alt="navbar-icon">
+            Adventure Bike</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home </a>
+                <a class="nav-item nav-link" href="aboutUs.html">About Us</a>
+                <a class="nav-item nav-link active" href="products.html">Products<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#cart-header">Cart<p id="quantityButtonNav"></p></a>
+                <a class="nav-item nav-link" href="#checkoutPage">Checkout</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Our Products</h1>
+    <br>
+    <br>
+    <!--Bootstrap Product UI Card-->
+    <div class="card w-25" id="p1">
+        <h5 class="card-title">Product 1</h5>
+        <img class="card-img-top" src="images/products/Bike1.webp" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+            <p id="p1-additionalText" class="card-text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            <button id="p1-showMoreButton">Show More</button>
+            <button id="p1-showLessButton">Show Less</button>
+            <p class="card-text"><strong>R500.00</strong></p>
+            <button class="quickAddButtons" onclick="addP1()">Add to Cart</button>
+            <a href="#cart-header">
+                <p class="p-added"></p>
+            </a>
+        </div>
+    </div>
+    <div class="card w-25" id="p2">
+        <h5 class="card-title">Product 2</h5>
+        <img class="card-img-top" src="images/products/Bike2.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            <p class="card-text"><strong>R600.00</strong></p>
+            <button class="quickAddButtons" onclick="addP2()">Add to Cart</button>
+            <a href="#cart-header">
+                <p class="p-added"></p>
+            </a>
+        </div>
+    </div>
+    <div class="card w-25" id="p3">
+        <h5 class="card-title">Product 3</h5>
+        <img class="card-img-top" src="images/products/Bike3.webp" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            <p class="card-text"><strong>R700.00</strong></p>
+            <button class="quickAddButtons" onclick="addP3()">Add to Cart</button>
+            <a href="#cart-header">
+                <p class="p-added"></p>
+            </a>
+        </div>
+    </div>
+    <div class="card w-25" id="p4">
+        <h5 class="card-title">Product 4</h5>
+        <img class="card-img-top" src="images/products/Bike4.webp" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            <p class="card-text"><strong>R800.00</strong></p>
+            <button class="quickAddButtons" onclick="addP4()">Add to Cart</button>
+            <a href="#cart-header">
+                <p class="p-added"></p>
+            </a>
+        </div>
+    </div>
+    <div class="card w-25" id="p5">
+        <h5 class="card-title">Product 5</h5>
+        <img class="card-img-top" src="images/products/Bike5.webp" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            <p class="card-text"><strong>R900.00</strong></p>
+            <button class="quickAddButtons" onclick="addP5()">Add to Cart</button>
+            <a href="#cart-header">
+                <p class="p-added"></p>
+            </a>
+        </div>
+    </div>
+    <!--Cart-->
+    <hr>
+    <h1 id="cart-header">Items currently in Cart</h1>
+    <hr>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="images/products/Bike1.webp" alt="Card image cap">
+            <div class="viewProductContainer">
+                <h5 class="card-title">Product 1</h5>
+                <p class="card-text">Give a description of the product here.</p>
+                <p class="card-text"><strong>R500.00</strong></p>
+                <button class="viewPorductButton" onclick="addP1()">+</button>
+                <p id="product1-total"></p>
+                <button class="viewPorductButton" onclick="minusP1()">-</button>
+                <p id="displayTotalAmountHere1"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/products/Bike2.jpg" alt="Card image cap">
+            <div class="viewProductContainer">
+                <h5 class="card-title">Product 2</h5>
+                <p class="card-text">Give a description of the product here.</p>
+                <p class="card-text"><strong>R600.00</strong></p>
+                <button class="viewPorductButton" onclick="addP2()">+</button>
+                <p id="product2-total"></p>
+                <button class="viewPorductButton" onclick="minusP2()">-</button>
+                <p id="displayTotalAmountHere2"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/products/Bike3.webp" alt="Card image cap">
+            <div class="viewProductContainer">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Give a description of the product here.</p>
+                <p class="card-text"><strong>R700.00</strong></p>
+                <button class="viewPorductButton" onclick="addP3()">+</button>
+                <p id="product3-total"></p>
+                <button class="viewPorductButton" onclick="minusP3()">-</button>
+                <p id="displayTotalAmountHere3"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/products/Bike4.webp" alt="Card image cap">
+            <div class="viewProductContainer">
+                <h5 class="card-title">Product 4</h5>
+                <p class="card-text">Give a description of the product here.</p>
+                <p class="card-text"><strong>R800.00</strong></p>
+                <button class="viewPorductButton" onclick="addP4()">+</button>
+                <p id="product4-total"></p>
+                <button class="viewPorductButton" onclick="minusP4()">-</button>
+                <p id="displayTotalAmountHere4"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/products/Bike5.webp" alt="Card image cap">
+            <div class="viewProductContainer">
+                <h5 class="card-title">Product 5</h5>
+                <p class="card-text">Give a description of the product here.</p>
+                <p class="card-text"><strong>R900.00</strong></p>
+                <button class="viewPorductButton" onclick="addP5()">+</button>
+                <p id="product5-total"></p>
+                <button class="viewPorductButton" onclick="minusP5()">-</button>
+                <p id="displayTotalAmountHere5"></p>
+            </div>
+        </div>
+    </div>
+    <button class="removeAllFromCart" onclick="removeAll()">Remove All from Cart</button>
+    <hr>
+    <div style="text-align: center;">
+        <p id="quantityButton"></p>
+        <p id="totalCostBeforeVat"></p>
+        <p id="totalCostAfterVat"></p>
+        <p id="vatTotal"></p>
+        <a href="#checkoutHeader">
+            <p id="checkout"></p>
+        </a>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1 id="checkoutHeader">Checkout</h1>
+    <!--Delivery Form-->
+    <form name="deliveryForm">
+        <h3 id="newsletterHeader">Delivery</h3>
+        <hr>
+        <label>First Name</label>
+        <input type="text" placeholder="Your name..">
+        <label>Last Name</label>
+        <input type="text" placeholder="Your last name..">
+        <label>Contact Details</label>
+        <input type="text" placeholder="Your cellphone number..">
+        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email address..">
+        <label>Collect or Deliver?</label><br>
+        <label>Select Delivery Destination</label>
+        <select>
+            <option value="0">Collect</option>
+            <option value="150" id="cpt">Cape Town</option>
+            <option value="200" id="jhb">Johannesburg</option>
+            <option value="250" id="swt">Soweto</option>
+            <option value="300" id="dbn">Durban</option>
+            <option value="350" id="ptn">Pretoria</option>
+            <option value="400" id="pe">Port Elizabeth</option>
+            <option value="450" id="esl">East London</option>
+        </select>
+        <p id="deliveryCost"></p>
+        <input type="submit" value="Confirm Delivery">
+    </form>
+    <!--Coupon Form-->
+    <form>
+        <h3 id="couponHeader">Add Coupon</h3>
+        <p id="subscribe-confirm"></p>
+        <p id="totalMinDiscount"></p>
+        <input onclick="couponSubmit()" type="submit" value="Submit">
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
