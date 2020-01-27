@@ -295,19 +295,36 @@
 
      }
      //jQuery Functions
-     //Show
+     //Show/Hide Additonal Product Text
      $(document).ready(function() {
-         $("#p1-showMoreButton").click(function() { 
-             $("#p1-additionalText").show(); 
+         $("#p1-showButton").click(function() { 
+             $("#p1-additionalText").toggle(); 
          });
      });
 
-     //Hide
      $(document).ready(function() {
-         $("#p1-showLessButton").click(function() { 
-             $("#p1-additionalText").hide();
-         });
-     });
+        $("#p2-showButton").click(function() { 
+            $("#p2-additionalText").toggle(); 
+        });
+    });
+
+    $(document).ready(function() {
+        $("#p3-showButton").click(function() { 
+            $("#p3-additionalText").toggle(); 
+        });
+    });
+
+    $(document).ready(function() {
+        $("#p4-showButton").click(function() { 
+            $("#p4-additionalText").toggle(); 
+        });
+    });
+
+    $(document).ready(function() {
+        $("#p5-showButton").click(function() { 
+            $("#p5-additionalText").toggle(); 
+        });
+    });
 
      //Hide/View Featured products on index page.
      $(document).ready(function() {
